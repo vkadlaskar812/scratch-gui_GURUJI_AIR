@@ -1,0 +1,48 @@
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+    max-width: 400px;
+    max-height: 600px;
+    width: 60%;
+    height: fit-content;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+    background: rgba(0, 0, 0, 0.5);
+    pointer-events: auto;
+  }
+
+.blur-background {
+    filter: blur(5px);
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+.popupGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  .popupGrid > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }

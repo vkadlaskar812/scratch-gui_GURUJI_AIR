@@ -1,0 +1,22 @@
+{
+    "appId": "com.example.scratch-gui",
+    "productName": "Scratch GUI",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "build/**/*",
+      "node_modules/**/*",
+      "package.json",
+      "README.md"
+    ],
+    "mac": {
+      "category": "public.app-category.education",
+      "target": "dmg"
+    },
+    "win": {
+      "target": "nsis"
+    },
+    "asar": false
+  }
+  
